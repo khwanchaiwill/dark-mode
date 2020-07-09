@@ -1,5 +1,7 @@
 import React from "react";
 import Chart from "./Chart";
+import {Link} from 'react-router-dom'
+
 
 const Charts = ({ coinData }) => {
   return (
@@ -11,7 +13,7 @@ const Charts = ({ coinData }) => {
           <div className="coin__logo">
             <img src={coin.image} height="40" alt={coin.name} />
           </div>
-          <Chart sparklineData={coin.sparkline_in_7d.price} />
+            <Chart sparklineData={coin.sparkline_in_7d.price} />
         </div>
       ))}
     </div>
